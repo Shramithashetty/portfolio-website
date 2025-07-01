@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">  
+    <style>
+     
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-container {
+    max-width: 700px;
+    padding: 30px;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 20px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.intro {
+    font-size: 18px;
+    text-align: justify; 
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+.experience-section, .project-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.experience, .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    max-height: 150px; 
+    overflow-y: auto;  
+    scrollbar-width: thin; 
+    scrollbar-color: #00aaff transparent;
+}
+
+
+.experience p, .project p {
+    text-align: justify; 
+    line-height: 1.5;
+    color: #ddd;
+}
+
+
+.experience::-webkit-scrollbar, 
+.project::-webkit-scrollbar {
+    width: 6px;
+}
+
+.experience::-webkit-scrollbar-thumb, 
+.project::-webkit-scrollbar-thumb {
+    background: #00aaff;
+    border-radius: 10px;
+}
+
+.experience::-webkit-scrollbar-track, 
+.project::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.experience:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">About</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html" >Skills</a></li>
+            <li><a href="certificate.html">Certificates</a></li>
+            <li><a href="about.html"class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="about-container">
+        <h1>About Me</h1>
+        <p class="intro">
+           Hi I’m K Shramitha Shetty, an enthusiastic and dedicated Engineering graduate in Information Science. I’m passionate about building impactful digital solutions through full-stack web development, AI.
+        </p>
+
+        <h2>Internships</h2>
+        <div class="experience-section">
+            <div class="experience">
+                <h3>💼 Kakunje Software Private Limited - ‘Web Development (AIML)’                                                                            </h3>
+                <p>• Gained hands-on experience in front-end and back-end web development, including database management.</p> 
+                <p>  • Developed and maintained responsive, dynamic website using HTML, CSS, Bootstrap, and Python. </p>
+                <p> • Explored AIML integration in web design to enhance user experience and optimize performance. </p>
+            </div>
+            <div class="experience">
+                <h3>💼 Salesforce - ‘Salesforce Developer Virtual Internship’    </h3>
+                <p>• Worked with various Salesforce standard objects, including Accounts, Contacts, Cases, Opportunities, Leads, and Reports.<br>
+                   • Implemented custom business logic using Apex Classes, Apex Triggers, Visualforce Pages, and Lightning Web Components.<br>
+                   • Designed and developed multiple Visualforce Pages with Apex controllers for backend operations.</p> 
+</p>
+            </div>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="project-section">
+            <div class="project">
+                <h3>🚀 'AI In Medicinal Plant Discovery And Health Care '</h3>
+            
+                  <p>* Developed an image upload feature that processes user input, passes it through the trained model, and displays results dynamically.</p>
+                  <p>* Developed a web-based platform for medicinal plant identification using CNN (Convolutional Neural Network). </p>
+                  <p>* Utilized TensorFlow to build and train the deep learning model. </p>
+                  <p>* Implemented Django as the backend framework to integrate the CNN model with the web application. </p>
+            </div>
+            <div class="project">
+                <h3>🚀 'Portfolio Website' </h3>
+                <p>* Built a personal portfolio website using HTML and CSS with a clean, organized layout.</p>
+                <p>* Added smooth scrolling and hover effects to improve user interaction.</p>
+                <p>* Included key sections like Home, Skills, Certificates, About, and Contact for easy navigation.</p>
+                <p>* Integrated a downloadable and viewable resume section for recruiters.</p>
+            </div>
+            <div class="project">
+                <h3>🚀 'Expense Tracker' </h3>
+                <p>* Developed a full-stack Expense Tracker using MERN to manage income and expenses.</p>
+                <p>* Implemented a user-friendly React.js frontend for adding, viewing, and deleting financial transactions.</p>
+                <p>* Built a robust Node.js backend with RESTful API endpoints for data handling.</p>
+                <p>* Integrated MongoDB for efficient data storage and retrieval, ensuring persistent transaction history.</p>
+                <p>* Provided real-time financial insights including current balance, total income, and total expenses, showcasing proficiency in MERN stack development.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
